@@ -1,0 +1,1803 @@
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 20%,
+      rgba(124, 58, 237, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 92% 65%,
+      rgba(236, 72, 153, 0.1),
+      transparent 30%
+    ),
+    #050507;
+
+  color: #fff;
+
+  padding: 140px 0 80px;
+}
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.contact-bg {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
+}
+
+.contact-glow {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  border-radius: 50%;
+
+  filter: blur(130px);
+
+  opacity: 0.13;
+
+  will-change:
+    transform;
+}
+
+.contact-glow-one {
+  top: 0;
+  left: -240px;
+
+  background: #7c3aed;
+}
+
+.contact-glow-two {
+  top: 35%;
+  right: -260px;
+
+  background: #ec4899;
+}
+
+.contact-glow-three {
+  bottom: -320px;
+  left: 40%;
+
+  background: #06b6d4;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.contact-grid {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.045;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.45) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.45) 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent,
+      black 15%,
+      black 80%,
+      transparent
+    );
+}
+
+/* =========================================================
+   BACKGROUND CODE
+========================================================= */
+
+.contact-code {
+  position: absolute;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 0.1em;
+
+  opacity: 0.16;
+
+  white-space: nowrap;
+}
+
+.contact-code-one {
+  top: 20%;
+  left: 3%;
+
+  transform: rotate(-90deg);
+}
+
+.contact-code-two {
+  top: 55%;
+  right: 2%;
+
+  transform: rotate(90deg);
+}
+
+.contact-code-three {
+  bottom: 12%;
+  left: 7%;
+}
+
+/* =========================================================
+   CODING RAIN
+========================================================= */
+
+.contact-code-rain {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  opacity: 1;
+}
+
+/* =========================================================
+   RAIN PARTICLE
+========================================================= */
+
+.code-rain-particle {
+  position: absolute;
+
+  top: -60px;
+
+  display: block;
+
+  width: max-content;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+
+  white-space: nowrap;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  will-change:
+    transform,
+    opacity;
+
+  text-shadow:
+    0 0 8px currentColor;
+}
+
+/* =========================================================
+   RAIN COLORS
+========================================================= */
+
+.rain-color-0 {
+  color: #a78bfa;
+}
+
+.rain-color-1 {
+  color: #c084fc;
+}
+
+.rain-color-2 {
+  color: #22d3ee;
+}
+
+.rain-color-3 {
+  color: #38bdf8;
+}
+
+.rain-color-4 {
+  color: #ec4899;
+}
+
+.rain-color-5 {
+  color: #f472b6;
+}
+
+.rain-color-6 {
+  color: #4ade80;
+}
+
+.rain-color-7 {
+  color: #facc15;
+}
+
+/* =========================================================
+   SOFT PARTICLES
+========================================================= */
+
+.rain-blur {
+  filter: blur(0.4px);
+
+  opacity: 0.18 !important;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.contact-container {
+  position: relative;
+
+  z-index: 4;
+
+  width:
+    min(
+      1500px,
+      calc(100% - 80px)
+    );
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.contact-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 24px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+}
+
+.contact-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+}
+
+.contact-overline {
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+
+  color: #c4b5fd;
+}
+
+.contact-number {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  color:
+    rgba(255, 255, 255, 0.4);
+}
+
+.contact-header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.contact-status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 5px
+      rgba(34, 197, 94, 0.08),
+    0 0 18px
+      rgba(34, 197, 94, 0.8);
+
+  animation:
+    statusPulse 2s ease-in-out infinite;
+}
+
+.contact-status {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+
+  color: #86efac;
+}
+
+@keyframes statusPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.contact-title-area {
+  padding: 90px 0 100px;
+}
+
+.contact-small-title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #a78bfa;
+}
+
+.contact-title-area h2 {
+  margin: 0;
+
+  font-size:
+    clamp(64px, 7.5vw, 110px);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+}
+
+.contact-title-area h2 span {
+  background:
+    linear-gradient(
+      100deg,
+      #a78bfa,
+      #ec4899 48%,
+      #22d3ee
+    );
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+.contact-title-decoration {
+  display: flex;
+
+  gap: 8px;
+
+  margin: 28px 0 26px;
+}
+
+.contact-title-decoration span {
+  display: block;
+
+  height: 4px;
+
+  border-radius: 10px;
+}
+
+.contact-title-decoration span:nth-child(1) {
+  width: 70px;
+
+  background: #a78bfa;
+}
+
+.contact-title-decoration span:nth-child(2) {
+  width: 30px;
+
+  background: #ec4899;
+}
+
+.contact-title-decoration span:nth-child(3) {
+  width: 12px;
+
+  background: #22d3ee;
+}
+
+.contact-intro {
+  max-width: 680px;
+
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.contact-main-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.82fr 1.18fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   INFO CARD
+========================================================= */
+
+.contact-info-card {
+  position: relative;
+
+  padding: 34px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  backdrop-filter: blur(25px);
+
+  -webkit-backdrop-filter: blur(25px);
+
+  box-shadow:
+    0 30px 80px
+      rgba(0, 0, 0, 0.35),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.06);
+
+  overflow: hidden;
+}
+
+.contact-info-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 15%;
+  right: 15%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a78bfa,
+      #ec4899,
+      transparent
+    );
+}
+
+.contact-info-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 25px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.info-label,
+.info-index {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 0.14em;
+}
+
+.info-label {
+  color: #a78bfa;
+}
+
+.info-index {
+  color:
+    rgba(255, 255, 255, 0.3);
+}
+
+.contact-info-content {
+  padding: 55px 0;
+}
+
+.contact-info-content h3 {
+  margin: 18px 0 25px;
+
+  font-size:
+    clamp(42px, 4vw, 60px);
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+}
+
+.contact-info-content h3 span {
+  color: #c4b5fd;
+}
+
+.contact-info-content p {
+  max-width: 470px;
+
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+}
+
+/* =========================================================
+   CONTACT DETAILS
+========================================================= */
+
+.contact-details {
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.contact-detail {
+  display: grid;
+
+  grid-template-columns:
+    45px 1fr 25px;
+
+  align-items: center;
+
+  min-height: 82px;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  transition:
+    background 0.35s ease,
+    padding 0.35s ease;
+}
+
+.contact-detail:hover {
+  padding-left: 10px;
+
+  background:
+    rgba(167, 139, 250, 0.06);
+}
+
+.detail-icon {
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.15);
+
+  border-radius: 9px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  color: #c4b5fd;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+}
+
+.detail-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  min-width: 0;
+}
+
+.detail-content small {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 0.15em;
+
+  color:
+    rgba(255, 255, 255, 0.35);
+}
+
+.detail-content strong {
+  font-size: 15px;
+
+  font-weight: 650;
+
+  color:
+    rgba(255, 255, 255, 0.86);
+
+  overflow-wrap: anywhere;
+}
+
+.detail-arrow {
+  font-size: 18px;
+
+  color:
+    rgba(255, 255, 255, 0.3);
+
+  transition: 0.3s ease;
+}
+
+.contact-detail:hover .detail-arrow {
+  color: #c4b5fd;
+
+  transform:
+    translate(3px, -3px);
+}
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.contact-availability {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 28px;
+
+  padding: 17px;
+
+  border-radius: 14px;
+
+  background:
+    rgba(34, 197, 94, 0.045);
+
+  border:
+    1px solid
+    rgba(34, 197, 94, 0.1);
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 15px
+      rgba(34, 197, 94, 0.8);
+}
+
+.availability-text {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.availability-text small {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 0.15em;
+
+  color: #86efac;
+}
+
+.availability-text strong {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+}
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
+.social-section {
+  margin-top: 35px;
+}
+
+.social-heading {
+  margin-bottom: 15px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 0.16em;
+
+  color:
+    rgba(255, 255, 255, 0.35);
+}
+
+.social-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.social-card {
+  min-height: 82px;
+
+  padding: 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 17px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.social-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(255, 255, 255, 0.18);
+
+  background:
+    rgba(255, 255, 255, 0.05);
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 auto;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 13px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.social-card:hover .social-icon {
+  transform:
+    rotate(-8deg) scale(1.08);
+}
+
+.social-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.social-card-content strong {
+  font-size: 13px;
+
+  font-weight: 750;
+}
+
+.social-card-content small {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 9px;
+
+  color:
+    rgba(255, 255, 255, 0.38);
+}
+
+.social-arrow {
+  margin-left: auto;
+
+  color:
+    rgba(255, 255, 255, 0.3);
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.social-card:hover .social-arrow {
+  transform:
+    translate(3px, -3px);
+
+  color: #fff;
+}
+
+.whatsapp .social-icon {
+  color: #25d366;
+}
+
+.instagram .social-icon {
+  color: #e1306c;
+}
+
+.x .social-icon {
+  color: #fff;
+}
+
+.facebook .social-icon {
+  color: #1877f2;
+}
+
+.github .social-icon {
+  color: #a78bfa;
+}
+
+.linkedin .social-icon {
+  color: #0a66c2;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.contact-form {
+  position: relative;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.11);
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.065),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  backdrop-filter: blur(25px);
+
+  -webkit-backdrop-filter: blur(25px);
+
+  overflow: hidden;
+
+  box-shadow:
+    0 40px 100px
+      rgba(0, 0, 0, 0.4),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.05);
+}
+
+.contact-form::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 15%;
+  right: 15%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a78bfa,
+      #ec4899,
+      #22d3ee,
+      transparent
+    );
+}
+
+/* =========================================================
+   FORM TOP BAR
+========================================================= */
+
+.form-topbar {
+  height: 58px;
+
+  padding: 0 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 11px;
+
+  background:
+    rgba(0, 0, 0, 0.18);
+}
+
+.terminal-controls {
+  display: flex;
+
+  gap: 6px;
+}
+
+.terminal-controls span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.2);
+}
+
+.terminal-controls span:nth-child(1) {
+  background: #f87171;
+}
+
+.terminal-controls span:nth-child(2) {
+  background: #facc15;
+}
+
+.terminal-controls span:nth-child(3) {
+  background: #4ade80;
+}
+
+.form-terminal-name {
+  color:
+    rgba(255, 255, 255, 0.55);
+}
+
+.form-terminal-status {
+  margin-left: auto;
+
+  color: #86efac;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   FORM CONTENT
+========================================================= */
+
+.form-content {
+  padding: 42px;
+}
+
+.form-intro {
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 40px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+}
+
+.form-intro p {
+  margin: 0;
+}
+
+.form-line-number {
+  color: #a78bfa;
+}
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+  margin-bottom: 27px;
+}
+
+.form-group label {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 10px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  color:
+    rgba(255, 255, 255, 0.4);
+}
+
+.form-group label span {
+  color: #a78bfa;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  outline: none;
+
+  border-radius: 13px;
+
+  background:
+    rgba(0, 0, 0, 0.22);
+
+  color: #fff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group input {
+  height: 58px;
+
+  padding: 0 18px;
+}
+
+.form-group textarea {
+  min-height: 180px;
+
+  padding: 18px;
+
+  resize: vertical;
+
+  line-height: 1.7;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color:
+    rgba(255, 255, 255, 0.22);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color:
+    rgba(167, 139, 250, 0.6);
+
+  background:
+    rgba(167, 139, 250, 0.035);
+
+  box-shadow:
+    0 0 0 4px
+      rgba(167, 139, 250, 0.06),
+    0 0 30px
+      rgba(124, 58, 237, 0.08);
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.form-status {
+  margin-bottom: 18px;
+
+  padding: 13px 15px;
+
+  border:
+    1px solid
+    rgba(167, 139, 250, 0.18);
+
+  border-radius: 10px;
+
+  background:
+    rgba(167, 139, 250, 0.05);
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 11px;
+
+  color: #c4b5fd;
+}
+
+.form-status span {
+  margin-right: 8px;
+
+  color: #ec4899;
+}
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.contact-submit {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 64px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 20px;
+
+  border:
+    1px solid
+    rgba(167, 139, 250, 0.4);
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      100deg,
+      rgba(124, 58, 237, 0.22),
+      rgba(236, 72, 153, 0.15)
+    );
+
+  color: #fff;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-submit:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(167, 139, 250, 0.7);
+
+  box-shadow:
+    0 20px 45px
+      rgba(124, 58, 237, 0.18),
+    0 0 35px
+      rgba(236, 72, 153, 0.08);
+}
+
+.submit-icon {
+  margin-right: 12px;
+
+  font-size: 20px;
+}
+
+.submit-end {
+  margin-left: auto;
+
+  font-size: 18px;
+
+  opacity: 0.55;
+}
+
+/* =========================================================
+   FORM FOOTER
+========================================================= */
+
+.form-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 17px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 0.08em;
+
+  color:
+    rgba(255, 255, 255, 0.25);
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.contact-bottom {
+  margin-top: 100px;
+}
+
+.contact-bottom-line {
+  width: 100%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.15),
+      transparent
+    );
+}
+
+.contact-bottom-content {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-top: 20px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color:
+    rgba(255, 255, 255, 0.25);
+}
+
+.contact-bottom-content strong {
+  font-size: 13px;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+  .contact-container {
+    width:
+      min(
+        1100px,
+        calc(100% - 60px)
+      );
+  }
+
+  .contact-main-grid {
+    gap: 45px;
+  }
+
+  .code-rain-particle {
+    font-size: 7px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 110px 0 70px;
+  }
+
+  .contact-container {
+    width:
+      min(
+        760px,
+        calc(100% - 40px)
+      );
+  }
+
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .contact-title-area {
+    padding: 70px 0 75px;
+  }
+
+  .contact-code-one,
+  .contact-code-two,
+  .contact-code-three {
+    opacity: 0.1;
+  }
+
+  .code-rain-particle {
+    font-size: 7px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .contact-section {
+    padding: 90px 0 55px;
+  }
+
+  .contact-container {
+    width:
+      calc(100% - 28px);
+  }
+
+  .contact-header {
+    align-items: flex-start;
+  }
+
+  .contact-header-left {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+  .contact-overline {
+    font-size: 10px;
+  }
+
+  .contact-number {
+    font-size: 10px;
+  }
+
+  .contact-status {
+    font-size: 8px;
+  }
+
+  .contact-title-area {
+    padding: 60px 0;
+  }
+
+  .contact-title-area h2 {
+    font-size:
+      clamp(48px, 13vw, 72px);
+  }
+
+  .contact-intro {
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  .contact-info-card {
+    padding: 25px;
+
+    border-radius: 22px;
+  }
+
+  .contact-info-content {
+    padding: 42px 0;
+  }
+
+  .contact-info-content h3 {
+    font-size: 40px;
+  }
+
+  .contact-info-content p {
+    font-size: 14px;
+  }
+
+  .contact-detail {
+    grid-template-columns:
+      40px 1fr 20px;
+
+    min-height: 76px;
+  }
+
+  .detail-content strong {
+    font-size: 14px;
+  }
+
+  .social-card-content strong {
+    font-size: 13px;
+  }
+
+  .social-card-content small {
+    font-size: 10px;
+  }
+
+  .contact-form {
+    border-radius: 22px;
+  }
+
+  .form-content {
+    padding: 27px;
+  }
+
+  .form-intro {
+    font-size: 12px;
+
+    margin-bottom: 30px;
+  }
+
+  .form-group label {
+    font-size: 9px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .contact-submit {
+    min-height: 60px;
+
+    font-size: 12px;
+  }
+
+  .contact-bottom {
+    margin-top: 70px;
+  }
+
+  .contact-bottom-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    font-size: 9px;
+  }
+
+  /* ---------------------------------------------
+     RAIN
+  --------------------------------------------- */
+
+  .code-rain-particle {
+    font-size: 6px;
+
+    text-shadow:
+      0 0 5px currentColor;
+  }
+
+  .contact-code-rain {
+    opacity: 0.75;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+  .contact-section {
+    padding-top: 75px;
+  }
+
+  .contact-container {
+    width:
+      calc(100% - 22px);
+  }
+
+  .contact-header-right {
+    display: none;
+  }
+
+  .contact-title-area {
+    padding: 50px 0;
+  }
+
+  .contact-title-area h2 {
+    font-size:
+      clamp(43px, 13vw, 60px);
+  }
+
+  .contact-intro {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .contact-small-title {
+    font-size: 11px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .contact-info-content {
+    padding: 35px 0;
+  }
+
+  .contact-info-content h3 {
+    font-size: 36px;
+  }
+
+  .contact-info-content p {
+    font-size: 14px;
+  }
+
+  .detail-content strong {
+    font-size: 13px;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-topbar {
+    padding: 0 15px;
+  }
+
+  .form-content {
+    padding: 21px;
+  }
+
+  .form-intro {
+    font-size: 11px;
+  }
+
+  .form-group {
+    margin-bottom: 22px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .form-group textarea {
+    min-height: 150px;
+  }
+
+  .contact-submit {
+    min-height: 60px;
+
+    font-size: 11px;
+  }
+
+  /* ---------------------------------------------
+     VERY SMALL CODE RAIN
+  --------------------------------------------- */
+
+  .code-rain-particle {
+    font-size: 5px;
+
+    opacity: 0.2;
+  }
+
+  .contact-code-one,
+  .contact-code-two,
+  .contact-code-three {
+    display: none;
+  }
+}
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 420px) {
+  .contact-title-area h2 {
+    font-size: 42px;
+  }
+
+  .contact-intro {
+    font-size: 13px;
+  }
+
+  .contact-info-content h3 {
+    font-size: 32px;
+  }
+
+  .contact-info-content p {
+    font-size: 13px;
+  }
+
+  .detail-content strong {
+    font-size: 12px;
+  }
+
+  .social-card-content strong {
+    font-size: 12px;
+  }
+
+  .social-card-content small {
+    font-size: 9px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+  }
+
+  .code-rain-particle {
+    font-size: 4.5px;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-status-dot {
+    animation: none;
+  }
+
+  .code-rain-particle {
+    display: none;
+  }
+
+  .contact-glow {
+    transform: none !important;
+  }
+
+  .social-card,
+  .contact-detail,
+  .contact-submit {
+    transition: none;
+  }
+}
